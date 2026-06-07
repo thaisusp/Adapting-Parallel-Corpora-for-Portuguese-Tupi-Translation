@@ -1,0 +1,4 @@
+split,historical_rows,adapted_rows,same_row_count,same_target_order,same_target_set,target_intersection,historical_only_targets,adapted_only_targets,first_mismatch_index,status
+train,4967,4967,True,True,True,4737,0,0,,ok
+val,1065,1065,True,True,True,1050,0,0,,ok
+test,1065,1065,True,True,True,1055,0,0,,ok

@@ -1,0 +1,17 @@
+item,count,rate_over_corpus
+adapted_corpus_sentences,7097,1.0
+sentences_with_changes,4703,0.6627
+sentences_without_changes,2394,0.3373
+change_type_orthography,503,0.0709
+change_type_punctuation,475,0.0669
+change_type_direct_order,1370,0.193
+change_type_second_person_pronoun,1065,0.1501
+change_type_other_pronoun,524,0.0738
+change_type_verb_form,1450,0.2043
+change_type_vocabulary,1388,0.1956
+change_type_connector,324,0.0457
+change_type_syntax_simplification,2810,0.3959
+change_type_addition,252,0.0355
+change_type_omission,32,0.0045
+change_type_uncertain,172,0.0242
+change_type_other,10,0.0014

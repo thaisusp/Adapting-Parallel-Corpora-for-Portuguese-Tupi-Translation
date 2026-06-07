@@ -1,0 +1,49 @@
+ModelType,TrainDataset,Direction,Dataset,Metric,Mean,SourceFile,ModelLabel
+finetuned,adapted,pt_to_tupi,adapted,BLEU,9.26,results/metrics/finetuned/finetuned_pt_to_tupi_train_adapted_aggregate.csv,Fine-tuned (adapted)
+finetuned,adapted,pt_to_tupi,adapted,TER,80.8,results/metrics/finetuned/finetuned_pt_to_tupi_train_adapted_aggregate.csv,Fine-tuned (adapted)
+finetuned,adapted,pt_to_tupi,adapted,chrF1,32.61,results/metrics/finetuned/finetuned_pt_to_tupi_train_adapted_aggregate.csv,Fine-tuned (adapted)
+finetuned,adapted,pt_to_tupi,adapted,chrF3,31.38,results/metrics/finetuned/finetuned_pt_to_tupi_train_adapted_aggregate.csv,Fine-tuned (adapted)
+finetuned,adapted,pt_to_tupi,historical,BLEU,10.17,results/metrics/finetuned/finetuned_pt_to_tupi_train_adapted_aggregate.csv,Fine-tuned (adapted)
+finetuned,adapted,pt_to_tupi,historical,TER,80.6,results/metrics/finetuned/finetuned_pt_to_tupi_train_adapted_aggregate.csv,Fine-tuned (adapted)
+finetuned,adapted,pt_to_tupi,historical,chrF1,32.82,results/metrics/finetuned/finetuned_pt_to_tupi_train_adapted_aggregate.csv,Fine-tuned (adapted)
+finetuned,adapted,pt_to_tupi,historical,chrF3,31.82,results/metrics/finetuned/finetuned_pt_to_tupi_train_adapted_aggregate.csv,Fine-tuned (adapted)
+finetuned,historical,pt_to_tupi,adapted,BLEU,5.75,results/metrics/finetuned/finetuned_pt_to_tupi_train_historical_aggregate.csv,Fine-tuned (historical)
+finetuned,historical,pt_to_tupi,adapted,TER,84.34,results/metrics/finetuned/finetuned_pt_to_tupi_train_historical_aggregate.csv,Fine-tuned (historical)
+finetuned,historical,pt_to_tupi,adapted,chrF1,28.96,results/metrics/finetuned/finetuned_pt_to_tupi_train_historical_aggregate.csv,Fine-tuned (historical)
+finetuned,historical,pt_to_tupi,adapted,chrF3,28.12,results/metrics/finetuned/finetuned_pt_to_tupi_train_historical_aggregate.csv,Fine-tuned (historical)
+finetuned,historical,pt_to_tupi,historical,BLEU,7.22,results/metrics/finetuned/finetuned_pt_to_tupi_train_historical_aggregate.csv,Fine-tuned (historical)
+finetuned,historical,pt_to_tupi,historical,TER,82.05,results/metrics/finetuned/finetuned_pt_to_tupi_train_historical_aggregate.csv,Fine-tuned (historical)
+finetuned,historical,pt_to_tupi,historical,chrF1,30.3,results/metrics/finetuned/finetuned_pt_to_tupi_train_historical_aggregate.csv,Fine-tuned (historical)
+finetuned,historical,pt_to_tupi,historical,chrF3,29.79,results/metrics/finetuned/finetuned_pt_to_tupi_train_historical_aggregate.csv,Fine-tuned (historical)
+finetuned,adapted,tupi_to_pt,adapted,BLEU,11.64,results/metrics/finetuned/finetuned_tupi_to_pt_train_adapted_aggregate.csv,Fine-tuned (adapted)
+finetuned,adapted,tupi_to_pt,adapted,TER,87.61,results/metrics/finetuned/finetuned_tupi_to_pt_train_adapted_aggregate.csv,Fine-tuned (adapted)
+finetuned,adapted,tupi_to_pt,adapted,chrF1,31.24,results/metrics/finetuned/finetuned_tupi_to_pt_train_adapted_aggregate.csv,Fine-tuned (adapted)
+finetuned,adapted,tupi_to_pt,adapted,chrF3,30.5,results/metrics/finetuned/finetuned_tupi_to_pt_train_adapted_aggregate.csv,Fine-tuned (adapted)
+finetuned,adapted,tupi_to_pt,historical,BLEU,10.26,results/metrics/finetuned/finetuned_tupi_to_pt_train_adapted_aggregate.csv,Fine-tuned (adapted)
+finetuned,adapted,tupi_to_pt,historical,TER,90.24,results/metrics/finetuned/finetuned_tupi_to_pt_train_adapted_aggregate.csv,Fine-tuned (adapted)
+finetuned,adapted,tupi_to_pt,historical,chrF1,30.14,results/metrics/finetuned/finetuned_tupi_to_pt_train_adapted_aggregate.csv,Fine-tuned (adapted)
+finetuned,adapted,tupi_to_pt,historical,chrF3,29.42,results/metrics/finetuned/finetuned_tupi_to_pt_train_adapted_aggregate.csv,Fine-tuned (adapted)
+finetuned,historical,tupi_to_pt,adapted,BLEU,8.97,results/metrics/finetuned/finetuned_tupi_to_pt_train_historical_aggregate.csv,Fine-tuned (historical)
+finetuned,historical,tupi_to_pt,adapted,TER,94.39,results/metrics/finetuned/finetuned_tupi_to_pt_train_historical_aggregate.csv,Fine-tuned (historical)
+finetuned,historical,tupi_to_pt,adapted,chrF1,28.32,results/metrics/finetuned/finetuned_tupi_to_pt_train_historical_aggregate.csv,Fine-tuned (historical)
+finetuned,historical,tupi_to_pt,adapted,chrF3,27.78,results/metrics/finetuned/finetuned_tupi_to_pt_train_historical_aggregate.csv,Fine-tuned (historical)
+finetuned,historical,tupi_to_pt,historical,BLEU,12.61,results/metrics/finetuned/finetuned_tupi_to_pt_train_historical_aggregate.csv,Fine-tuned (historical)
+finetuned,historical,tupi_to_pt,historical,TER,89.77,results/metrics/finetuned/finetuned_tupi_to_pt_train_historical_aggregate.csv,Fine-tuned (historical)
+finetuned,historical,tupi_to_pt,historical,chrF1,30.64,results/metrics/finetuned/finetuned_tupi_to_pt_train_historical_aggregate.csv,Fine-tuned (historical)
+finetuned,historical,tupi_to_pt,historical,chrF3,30.03,results/metrics/finetuned/finetuned_tupi_to_pt_train_historical_aggregate.csv,Fine-tuned (historical)
+zeroshot,-,pt_to_tupi,adapted,BLEU,0.1,results/metrics/zeroshot/zeroshot_pt_to_tupi_aggregate.csv,Zero-shot
+zeroshot,-,pt_to_tupi,adapted,TER,135.45,results/metrics/zeroshot/zeroshot_pt_to_tupi_aggregate.csv,Zero-shot
+zeroshot,-,pt_to_tupi,adapted,chrF1,11.86,results/metrics/zeroshot/zeroshot_pt_to_tupi_aggregate.csv,Zero-shot
+zeroshot,-,pt_to_tupi,adapted,chrF3,13.19,results/metrics/zeroshot/zeroshot_pt_to_tupi_aggregate.csv,Zero-shot
+zeroshot,-,pt_to_tupi,historical,BLEU,0.11,results/metrics/zeroshot/zeroshot_pt_to_tupi_aggregate.csv,Zero-shot
+zeroshot,-,pt_to_tupi,historical,TER,132.12,results/metrics/zeroshot/zeroshot_pt_to_tupi_aggregate.csv,Zero-shot
+zeroshot,-,pt_to_tupi,historical,chrF1,12.18,results/metrics/zeroshot/zeroshot_pt_to_tupi_aggregate.csv,Zero-shot
+zeroshot,-,pt_to_tupi,historical,chrF3,13.41,results/metrics/zeroshot/zeroshot_pt_to_tupi_aggregate.csv,Zero-shot
+zeroshot,-,tupi_to_pt,adapted,BLEU,0.23,results/metrics/zeroshot/zeroshot_tupi_to_pt_aggregate.csv,Zero-shot
+zeroshot,-,tupi_to_pt,adapted,TER,121.64,results/metrics/zeroshot/zeroshot_tupi_to_pt_aggregate.csv,Zero-shot
+zeroshot,-,tupi_to_pt,adapted,chrF1,12.98,results/metrics/zeroshot/zeroshot_tupi_to_pt_aggregate.csv,Zero-shot
+zeroshot,-,tupi_to_pt,adapted,chrF3,12.56,results/metrics/zeroshot/zeroshot_tupi_to_pt_aggregate.csv,Zero-shot
+zeroshot,-,tupi_to_pt,historical,BLEU,0.17,results/metrics/zeroshot/zeroshot_tupi_to_pt_aggregate.csv,Zero-shot
+zeroshot,-,tupi_to_pt,historical,TER,122.72,results/metrics/zeroshot/zeroshot_tupi_to_pt_aggregate.csv,Zero-shot
+zeroshot,-,tupi_to_pt,historical,chrF1,12.82,results/metrics/zeroshot/zeroshot_tupi_to_pt_aggregate.csv,Zero-shot
+zeroshot,-,tupi_to_pt,historical,chrF3,12.39,results/metrics/zeroshot/zeroshot_tupi_to_pt_aggregate.csv,Zero-shot

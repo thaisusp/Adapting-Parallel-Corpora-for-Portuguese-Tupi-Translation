@@ -1,0 +1,81 @@
+Metric,Rank,Direction,EvalDataset,SentenceIndex,Source,Expected_Reference,Prediction_Finetuned_Adapted,Prediction_Finetuned_Historical,Score_Finetuned_Adapted,Score_Finetuned_Historical,Delta_AdaptedMinusHistorical,QualityDelta
+BLEU,1,pt_to_tupi,adapted,518,ele morrendo,omanõmo,Omanõmo,omanõmo,0.0,100.0,-100.0,-100.0
+BLEU,2,pt_to_tupi,historical,518,morrendo ele,omanõmo,Omanõmo,omanõmo,0.0,100.0,-100.0,-100.0
+BLEU,3,tupi_to_pt,adapted,911,Tatá îaîmondyk,acendemos o fogo,vamos cansa-lo,acendemos o fogo,0.0,100.0,-100.0,-100.0
+BLEU,4,tupi_to_pt,historical,204,Asaûsu biã,amo-o,eu o amo,amo-o,0.0,100.0,-100.0,-100.0
+BLEU,5,tupi_to_pt,historical,458,Eîotĩ nde kesaba xe porupi,amarra tua rede ao lado de mim,abra sua rede de roupas ao meu lado,amarra tua rede ao lado de mim,7.8098,100.0,-92.1902,-92.1902
+BLEU,6,tupi_to_pt,historical,668,Seîxu îabi'õ nhemombe'u,confessar-se a cada ano,confessando-se a ele todos os dias,confessar-se a cada ano,8.1167,100.0,-91.8833,-91.8833
+BLEU,7,tupi_to_pt,historical,97,Anhanga mondyîtabamo,como modo de espantar o diabo,como um objeto de furto do diabo,como modo de espantar o diabo,8.643,100.0,-91.357,-91.357
+BLEU,8,tupi_to_pt,historical,485,Xe py'a-tytyk,eu tenho o coração palpitante,meu coração está trêmulo,eu tenho o coração palpitante,12.4402,100.0,-87.5598,-87.5598
+BLEU,9,tupi_to_pt,historical,908,T'aîmopóne nde nhe'enga,hei de cumprir tuas palavras,farei cumprir sua palavra,hei de cumprir tuas palavras,12.4402,100.0,-87.5598,-87.5598
+BLEU,10,tupi_to_pt,historical,181,T'osyk esapy'a o îukaagûãme,que chegue logo ao lugar de o matarem,que o lancem no seu lugar de culto,que chegue logo ao lugar de o matarem,13.1345,100.0,-86.8655,-86.8655
+BLEU,11,tupi_to_pt,historical,991,Tesãîa pupé kó 'ara îaîmoeté,com alegria honramos este dia,"com a saúde, comemoramos este dia",com alegria honramos este dia,14.5358,100.0,-85.4642,-85.4642
+BLEU,12,tupi_to_pt,adapted,776,Xe ra'yt!,meu filho!,eu estou bêbado!,meu filho!,15.9736,100.0,-84.0264,-84.0264
+BLEU,13,tupi_to_pt,adapted,737,Eẽ hegûé!,"ah, sim!","ei, vai!","ah, sim!",18.9959,100.0,-81.0041,-81.0041
+BLEU,14,tupi_to_pt,adapted,87,Aroŷrõ tekó-poxy,detesto a vida má,detesto o vício,detesto a vida má,19.7161,100.0,-80.2839,-80.2839
+BLEU,15,tupi_to_pt,historical,838,"Pene'ĩ, ta pe rory","eia, que estejais alegres","vocês, que se alegrem","eia, que estejais alegres",21.3644,100.0,-78.6356,-78.6356
+BLEU,16,tupi_to_pt,historical,907,"Eresó, kó 'ara ri","vais, neste dia","você vai, neste mundo","vais, neste dia",21.3644,100.0,-78.6356,-78.6356
+BLEU,17,tupi_to_pt,historical,1003,Pe atõîa n'oîpotari,não querem que vos toquem,vocês não querem ser atacados,não querem que vos toquem,21.3644,100.0,-78.6356,-78.6356
+BLEU,18,tupi_to_pt,historical,305,Y piaramo asó,vou em busca de água,vou como cano de água,vou em busca de água,23.6435,100.0,-76.3565,-76.3565
+BLEU,19,tupi_to_pt,historical,871,I angaîpab-eté kó pe rembiá potasaba,é muito má a vontade destas vossas presas,"querendo este alimento para vocês, é muito ruim",é muito má a vontade destas vossas comidas,9.5354,84.0896,-74.5542,-74.5542
+BLEU,20,tupi_to_pt,historical,518,omanõmo,morrendo ele,quando ele morre,morrendo ele,27.5161,100.0,-72.4839,-72.4839
+TER,1,tupi_to_pt,adapted,35,ypyasoara,quem vai buscar água,"o que é chamado de ""primo"", o que é chamado de ""primo"", o que é chamado de ""primo"", o que é chamado de ""primo"", o que é chamado de ""primo"", o que é chamado de ""primo"", o que é chamado de ""primo"", o que é chamado de ""primo"", o que é chamado de ""primo"", o que é chamado de ""primo"", o primeiro ""primo"", o primeiro ""o que é chamado de ""primo"", o primeiro ""o que é chamado de ""primo"", o primeiro ""o que é","o que é chamado de ""primo""",2100.0,150.0,1950.0,-1950.0
+TER,2,tupi_to_pt,historical,35,ypyasoara,o que vai buscar água,"o que é chamado de ""primo"", o que é chamado de ""primo"", o que é chamado de ""primo"", o que é chamado de ""primo"", o que é chamado de ""primo"", o que é chamado de ""primo"", o que é chamado de ""primo"", o que é chamado de ""primo"", o que é chamado de ""primo"", o que é chamado de ""primo"", o primeiro ""primo"", o primeiro ""o que é chamado de ""primo"", o primeiro ""o que é chamado de ""primo"", o primeiro ""o que é","o que é chamado de ""primo""",1640.0,80.0,1560.0,-1560.0
+TER,3,tupi_to_pt,adapted,1057,po'i'i,fininho,o que é de madrugada,caça,500.0,100.0,400.0,-400.0
+TER,4,pt_to_tupi,adapted,1052,"lugar para se abrigar da água, barra do porto",y-mbîasaba,y suí i îepé,y-y-pytupaba,400.0,100.0,300.0,-300.0
+TER,5,tupi_to_pt,adapted,177,aîubykara,enforcador,o que é de madeira,fiquei-o apodando,500.0,200.0,300.0,-300.0
+TER,6,tupi_to_pt,historical,204,Asaûsu biã,amo-o,eu o amo,amo-o,300.0,0.0,300.0,-300.0
+TER,7,tupi_to_pt,adapted,1010,o nhe'enga poxŷagûera,a maldade de suas palavras,o que é mau é o que é mau é o que é mau,o que transgride suas palavras,280.0,60.0,220.0,-220.0
+TER,8,pt_to_tupi,adapted,163,servi a comida dele,Asemi'u-erokûab,Aîmoîur i 'u,aîmoîu-porok,300.0,100.0,200.0,-200.0
+TER,9,pt_to_tupi,adapted,268,quem tem olhos que são luxuriosos,sesá-poropotaryba'e,i poropotara resé,sesé-poropotara'upaba'e,300.0,100.0,200.0,-200.0
+TER,10,pt_to_tupi,adapted,1029,coloquei penas nele,Aîpepó-moín,Aîapyk i xuí,aîmoîur-y,300.0,100.0,200.0,-200.0
+TER,11,pt_to_tupi,adapted,1059,sinal de golpe com uma pedra,itá-pora,itá resé ku'a,itá-pûaî,300.0,100.0,200.0,-200.0
+TER,12,pt_to_tupi,historical,187,virei-me a cabeça para um e outro lado,Anheakã-mobabak,Aîapyk amõ îepé,aîmoîuru-momoîuru,300.0,100.0,200.0,-200.0
+TER,13,pt_to_tupi,historical,1052,"lugar de se abrigar da água, barra de porto",y-mbîasaba,y suí nhẽ,y-y-tyba,300.0,100.0,200.0,-200.0
+TER,14,pt_to_tupi,historical,1059,sinal de golpe com pedra,itá-pora,itá resé kuakupa,itá-tyba,300.0,100.0,200.0,-200.0
+TER,15,tupi_to_pt,adapted,12,Anhemosaraî,brinco,eu o enfeio,desviei-o,300.0,100.0,200.0,-200.0
+TER,16,tupi_to_pt,adapted,180,Aîkugûab,agradeci-o,eu o amo,fiquei-o,300.0,100.0,200.0,-200.0
+TER,17,tupi_to_pt,adapted,699,apykabapu'a,banco redondo,o que está no lugar de estar,tornozelo de cabeça,350.0,150.0,200.0,-200.0
+TER,18,tupi_to_pt,adapted,773,Atimbor,bafejo,estou de pé,fiquei-o,300.0,100.0,200.0,-200.0
+TER,19,tupi_to_pt,adapted,892,Asapûa'ok,aguço-a,eu o furei,esbofeteei-o,300.0,100.0,200.0,-200.0
+TER,20,tupi_to_pt,historical,394,Ereîmoîebype kaûĩ?,vomitas cauim?,você fez cauim de novo?,transformaste cauim?,250.0,50.0,200.0,-200.0
+chrF1,1,tupi_to_pt,adapted,776,Xe ra'yt!,meu filho!,eu estou bêbado!,meu filho!,8.9726,100.0,-91.0274,-91.0274
+chrF1,2,tupi_to_pt,adapted,737,Eẽ hegûé!,"ah, sim!","ei, vai!","ah, sim!",9.5238,100.0,-90.4762,-90.4762
+chrF1,3,pt_to_tupi,historical,978,"o que tem fome, o faminto",i ambyasyba'e,îepixûara,ambyasyba'e,6.3492,94.2432,-87.894,-87.894
+chrF1,4,tupi_to_pt,adapted,911,Tatá îaîmondyk,acendemos o fogo,vamos cansa-lo,acendemos o fogo,12.758,100.0,-87.242,-87.242
+chrF1,5,pt_to_tupi,historical,276,contigo sempre estamos,Nde resé memẽ oroîkó,Nde irũ îandé îepé,nde resé memẽ oroîkó,10.7045,93.0054,-82.301,-82.301
+chrF1,6,tupi_to_pt,historical,485,Xe py'a-tytyk,eu tenho o coração palpitante,meu coração está trêmulo,eu tenho o coração palpitante,27.2345,100.0,-72.7655,-72.7655
+chrF1,7,tupi_to_pt,historical,204,Asaûsu biã,amo-o,eu o amo,amo-o,29.1601,100.0,-70.8399,-70.8399
+chrF1,8,tupi_to_pt,historical,181,T'osyk esapy'a o îukaagûãme,que chegue logo ao lugar de o matarem,que o lancem no seu lugar de culto,que chegue logo ao lugar de o matarem,29.401,100.0,-70.599,-70.599
+chrF1,9,tupi_to_pt,historical,458,Eîotĩ nde kesaba xe porupi,amarra tua rede ao lado de mim,abra sua rede de roupas ao meu lado,amarra tua rede ao lado de mim,29.5285,100.0,-70.4715,-70.4715
+chrF1,10,tupi_to_pt,historical,429,"Ybaka rasapa, osó, nde reîá","atravessando o céu, foi, deixando-te","passou o céu, foi, fazendo você revirar","atravessando o céu, foi, deixando-te",31.2537,100.0,-68.7463,-68.7463
+chrF1,11,tupi_to_pt,historical,838,"Pene'ĩ, ta pe rory","eia, que estejais alegres","vocês, que se alegrem","eia, que estejais alegres",31.4022,100.0,-68.5978,-68.5978
+chrF1,12,tupi_to_pt,historical,907,"Eresó, kó 'ara ri","vais, neste dia","você vai, neste mundo","vais, neste dia",33.4734,100.0,-66.5266,-66.5266
+chrF1,13,tupi_to_pt,historical,305,Y piaramo asó,vou em busca de água,vou como cano de água,vou em busca de água,34.2906,100.0,-65.7094,-65.7094
+chrF1,14,tupi_to_pt,historical,97,Anhanga mondyîtabamo,como modo de espantar o diabo,como um objeto de furto do diabo,como modo de espantar o diabo,34.4249,100.0,-65.5751,-65.5751
+chrF1,15,tupi_to_pt,historical,668,Seîxu îabi'õ nhemombe'u,confessar-se a cada ano,confessando-se a ele todos os dias,confessar-se a cada ano,35.0868,100.0,-64.9132,-64.9132
+chrF1,16,tupi_to_pt,historical,1003,Pe atõîa n'oîpotari,não querem que vos toquem,vocês não querem ser atacados,não querem que vos toquem,37.0929,100.0,-62.9071,-62.9071
+chrF1,17,tupi_to_pt,historical,1055,Eresepyme'engype nde remiporupûera?,pagaste aquilo que tu usaste?,você pagou o seu valor?,pagaste o que tu usaste?,11.5478,74.0853,-62.5375,-62.5375
+chrF1,18,pt_to_tupi,adapted,569,que me livre das dificuldades,Ta xe pysyrõ marãtekó suí,Xe pysyrõ îepé tekatu suí,ta xe pysyrõ marãtekó suí,34.313,94.5478,-60.2348,-60.2348
+chrF1,19,tupi_to_pt,historical,871,I angaîpab-eté kó pe rembiá potasaba,é muito má a vontade destas vossas presas,"querendo este alimento para vocês, é muito ruim",é muito má a vontade destas vossas comidas,21.7623,81.0931,-59.3308,-59.3308
+chrF1,20,tupi_to_pt,adapted,61,itá-oka,casa de pedra,casa de ferro,casa de pedra,41.6516,100.0,-58.3484,-58.3484
+chrF3,1,tupi_to_pt,adapted,737,Eẽ hegûé!,"ah, sim!","ei, vai!","ah, sim!",9.5238,100.0,-90.4762,-90.4762
+chrF3,2,tupi_to_pt,adapted,776,Xe ra'yt!,meu filho!,eu estou bêbado!,meu filho!,10.9397,100.0,-89.0603,-89.0603
+chrF3,3,tupi_to_pt,adapted,911,Tatá îaîmondyk,acendemos o fogo,vamos cansa-lo,acendemos o fogo,12.3778,100.0,-87.6222,-87.6222
+chrF3,4,pt_to_tupi,historical,978,"o que tem fome, o faminto",i ambyasyba'e,îepixûara,ambyasyba'e,5.698,90.094,-84.396,-84.396
+chrF3,5,pt_to_tupi,historical,276,contigo sempre estamos,Nde resé memẽ oroîkó,Nde irũ îandé îepé,nde resé memẽ oroîkó,10.1803,93.0054,-82.8251,-82.8251
+chrF3,6,pt_to_tupi,adapted,978,quem tem fome é o faminto,i ambyasyba'e,Tynyhã-katu,ambyasyba'e oîkó-katu,4.2017,82.104,-77.9023,-77.9023
+chrF3,7,tupi_to_pt,historical,485,Xe py'a-tytyk,eu tenho o coração palpitante,meu coração está trêmulo,eu tenho o coração palpitante,25.3307,100.0,-74.6693,-74.6693
+chrF3,8,tupi_to_pt,historical,181,T'osyk esapy'a o îukaagûãme,que chegue logo ao lugar de o matarem,que o lancem no seu lugar de culto,que chegue logo ao lugar de o matarem,28.1553,100.0,-71.8447,-71.8447
+chrF3,9,tupi_to_pt,historical,838,"Pene'ĩ, ta pe rory","eia, que estejais alegres","vocês, que se alegrem","eia, que estejais alegres",28.8973,100.0,-71.1027,-71.1027
+chrF3,10,tupi_to_pt,historical,458,Eîotĩ nde kesaba xe porupi,amarra tua rede ao lado de mim,abra sua rede de roupas ao meu lado,amarra tua rede ao lado de mim,31.5689,100.0,-68.4311,-68.4311
+chrF3,11,tupi_to_pt,historical,429,"Ybaka rasapa, osó, nde reîá","atravessando o céu, foi, deixando-te","passou o céu, foi, fazendo você revirar","atravessando o céu, foi, deixando-te",31.6645,100.0,-68.3355,-68.3355
+chrF3,12,tupi_to_pt,historical,204,Asaûsu biã,amo-o,eu o amo,amo-o,31.8995,100.0,-68.1005,-68.1005
+chrF3,13,tupi_to_pt,historical,305,Y piaramo asó,vou em busca de água,vou como cano de água,vou em busca de água,35.2358,100.0,-64.7642,-64.7642
+chrF3,14,tupi_to_pt,historical,97,Anhanga mondyîtabamo,como modo de espantar o diabo,como um objeto de furto do diabo,como modo de espantar o diabo,35.6304,100.0,-64.3696,-64.3696
+chrF3,15,tupi_to_pt,historical,907,"Eresó, kó 'ara ri","vais, neste dia","você vai, neste mundo","vais, neste dia",39.1663,100.0,-60.8337,-60.8337
+chrF3,16,pt_to_tupi,adapted,569,que me livre das dificuldades,Ta xe pysyrõ marãtekó suí,Xe pysyrõ îepé tekatu suí,ta xe pysyrõ marãtekó suí,34.313,94.5478,-60.2348,-60.2348
+chrF3,17,tupi_to_pt,historical,1003,Pe atõîa n'oîpotari,não querem que vos toquem,vocês não querem ser atacados,não querem que vos toquem,40.1561,100.0,-59.8439,-59.8439
+chrF3,18,tupi_to_pt,adapted,87,Aroŷrõ tekó-poxy,detesto a vida má,detesto o vício,detesto a vida má,40.4588,100.0,-59.5412,-59.5412
+chrF3,19,tupi_to_pt,historical,871,I angaîpab-eté kó pe rembiá potasaba,é muito má a vontade destas vossas presas,"querendo este alimento para vocês, é muito ruim",é muito má a vontade destas vossas comidas,23.3193,82.1206,-58.8013,-58.8013
+chrF3,20,tupi_to_pt,adapted,61,itá-oka,casa de pedra,casa de ferro,casa de pedra,41.6516,100.0,-58.3484,-58.3484

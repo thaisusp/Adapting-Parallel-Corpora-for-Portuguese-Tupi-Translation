@@ -1,0 +1,9 @@
+ModelType,Direction,Dataset,Metric,Mean
+zeroshot,tupi_to_pt,adapted,BLEU,0.23
+zeroshot,tupi_to_pt,adapted,TER,121.64
+zeroshot,tupi_to_pt,adapted,chrF1,12.98
+zeroshot,tupi_to_pt,adapted,chrF3,12.56
+zeroshot,tupi_to_pt,historical,BLEU,0.17
+zeroshot,tupi_to_pt,historical,TER,122.72
+zeroshot,tupi_to_pt,historical,chrF1,12.82
+zeroshot,tupi_to_pt,historical,chrF3,12.39

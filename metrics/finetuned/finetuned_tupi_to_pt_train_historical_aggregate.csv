@@ -1,0 +1,9 @@
+ModelType,TrainDataset,Direction,Dataset,Metric,Mean
+finetuned,historical,tupi_to_pt,adapted,BLEU,8.97
+finetuned,historical,tupi_to_pt,adapted,TER,94.39
+finetuned,historical,tupi_to_pt,adapted,chrF1,28.32
+finetuned,historical,tupi_to_pt,adapted,chrF3,27.78
+finetuned,historical,tupi_to_pt,historical,BLEU,12.61
+finetuned,historical,tupi_to_pt,historical,TER,89.77
+finetuned,historical,tupi_to_pt,historical,chrF1,30.64
+finetuned,historical,tupi_to_pt,historical,chrF3,30.03

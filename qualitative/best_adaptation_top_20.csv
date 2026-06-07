@@ -1,0 +1,81 @@
+Metric,Rank,Direction,EvalDataset,SentenceIndex,Source,Expected_Reference,Prediction_Finetuned_Adapted,Prediction_Finetuned_Historical,Score_Finetuned_Adapted,Score_Finetuned_Historical,Delta_AdaptedMinusHistorical,QualityDelta
+BLEU,1,pt_to_tupi,adapted,201,são pedro puxou a espada,S Pedro itangapema osekyî,S Pedro itangapema osekyî,s pedro îepé-pûaî,100.0,0.0,100.0,100.0
+BLEU,2,pt_to_tupi,adapted,476,estou com dores de parto,Xe membyrasy,Xe membyrasy,xe ra'yrasy,100.0,0.0,100.0,100.0
+BLEU,3,pt_to_tupi,adapted,656,você chorava sempre,Ereîase'o îepi,Ereîase'o îepi,ereîesapy'a memẽ,100.0,0.0,100.0,100.0
+BLEU,4,pt_to_tupi,adapted,704,a primeira lei,tekó-ypy,tekó-ypy,tekó-pyrama,100.0,0.0,100.0,100.0
+BLEU,5,pt_to_tupi,adapted,1015,senhor jesus,Pa'i Îesu,Pa'i Îesu,pa'i îesu,100.0,0.0,100.0,100.0
+BLEU,6,pt_to_tupi,historical,476,eu tenho dores de parto,Xe membyrasy,Xe membyrasy,xe ra'yrasy,100.0,0.0,100.0,100.0
+BLEU,7,pt_to_tupi,historical,704,a lei primeira,tekó-ypy,tekó-ypy,tekó-pyrama,100.0,0.0,100.0,100.0
+BLEU,8,tupi_to_pt,adapted,204,Asaûsu biã,eu o amo,eu o amo,amo-o,100.0,0.0,100.0,100.0
+BLEU,9,tupi_to_pt,adapted,976,Onhemombe'upe abá gûarinĩ-namo o só îanondé?,alguém se confessa antes de ir à guerra?,alguém se confessa antes de ir à guerra?,dizendo-se o homem como um pequeno animal antes de se casar?,100.0,8.0545,91.9455,91.9455
+BLEU,10,tupi_to_pt,adapted,213,Abápe nde?,quem é você?,quem é você?,tu és de quem?,100.0,12.7033,87.2967,87.2967
+BLEU,11,pt_to_tupi,historical,1040,"a dança é que é boa, enfeitar-se, untar suas penas","Moraseîa é i katu, îegûaka, sa-mongy","Moraseîa é i katu, îegûaka, îepe'a-moîa","moraseîa é, oîemoîekûá, i piara moîasy",84.0896,7.8098,76.2798,76.2798
+BLEU,12,pt_to_tupi,adapted,53,a que tem o nome santa maria,Santa Maria seryba'e,Santa Maria seryba'e,santa maria seryba'e,100.0,27.5161,72.4839,72.4839
+BLEU,13,pt_to_tupi,adapted,347,meu avô jaguaruna,xe ramũîa Îagûaruna,xe ramũîa Îagûaruna,xe ramũ jagûaruna,100.0,27.5161,72.4839,72.4839
+BLEU,14,pt_to_tupi,historical,53,a que tem nome santa maria,Santa Maria seryba'e,Santa Maria seryba'e,santa maria seryba'e,100.0,27.5161,72.4839,72.4839
+BLEU,15,tupi_to_pt,adapted,915,Xe îuká peîepé,vocês me matam,vocês me matam,vós me matais,100.0,27.5161,72.4839,72.4839
+BLEU,16,tupi_to_pt,adapted,292,I pytun xe roka,minha casa está escura,minha casa está escura,é escura minha casa,100.0,35.3553,64.6447,64.6447
+BLEU,17,tupi_to_pt,adapted,474,N'omoetéî o monhangara,não honram seu criador,não honram seu criador,não reconhecem seu criador,100.0,35.3553,64.6447,64.6447
+BLEU,18,tupi_to_pt,adapted,691,Nd'e'ikatuî sesé omendá mimbápe serekó pukuî,não pode casar com ela enquanto a mantiver escondida,não pode casar com ela enquanto a mantém,"não pode casar-se com ela, estando longe dela",74.2088,13.4851,60.7237,60.7237
+BLEU,19,tupi_to_pt,adapted,276,Nde resé memẽ oroîkó,estamos sempre com você,estamos sempre com você,contigo estamos sempre,100.0,39.4322,60.5678,60.5678
+BLEU,20,tupi_to_pt,adapted,928,Osem okarype oîase'oasykatûabo,saiu para o pátio chorando muito dolorosamente,saiu para o pátio chorando,vão para seu quarto para se curarem,67.032,6.5673,60.4647,60.4647
+TER,1,tupi_to_pt,adapted,603,Aûîé ruãpe?,é suficiente?,por acaso?,por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que? por que razão? por que razão? por que? por que razão?,100.0,4700.0,-4600.0,4600.0
+TER,2,tupi_to_pt,historical,603,Aûîé ruãpe?,é o suficiente?,por acaso?,por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que? por que razão? por que razão? por que? por que razão?,100.0,3133.3333,-3033.3333,3033.3333
+TER,3,tupi_to_pt,adapted,227,Marãba'e-p'iã ri?,de que espécie é isto?,por que razão?,por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que? por que razão? por que? por que razão? por que? por que? por que razão? por que? por que? por que? por,80.0,1840.0,-1760.0,1760.0
+TER,4,tupi_to_pt,historical,227,Marãba'e-p'iã ri?,de que espécie será que é isto?,por que razão?,por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que? por que razão? por que? por que razão? por que? por que? por que razão? por que? por que? por que? por,85.7143,1300.0,-1214.2857,1214.2857
+TER,5,tupi_to_pt,adapted,720,mba'e-resémo?,por que seria? por que razão haveria?,o que seria?,por quê? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que? por que razão? por que? por que razão? por que? por que razão? por que? por que? por que razão?,71.4286,1271.4286,-1200.0,1200.0
+TER,6,pt_to_tupi,historical,544,há de ser coisa insignificante somente,A'uba nhote i por re'a,Mba'e-memûã-te i xupé,mba'e-a'u nhõ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nh,80.0,1220.0,-1140.0,1140.0
+TER,7,pt_to_tupi,historical,287,eis que até mesmo contra deus murmura,Tupã resé tiruã kó nhe'enga reîtyki,Tupã supé bé oîeapîá,tupã supé nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ,83.3333,1033.3333,-950.0,950.0
+TER,8,tupi_to_pt,historical,720,mba'e-resémo?,por que seria que? por que razão haveria de?,o que seria?,por quê? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que razão? por que? por que razão? por que? por que razão? por que? por que razão? por que? por que? por que razão?,88.8889,977.7778,-888.8889,888.8889
+TER,9,pt_to_tupi,adapted,583,o oposto de comer demais é comer apenas o suficiente,Mba'e 'u-eté-eté robaîara oîá nhote mba'e 'u,O'i-eté rupibé o'u-eté nhõ o'u-eté,mba'e-katu é nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ,100.0,885.7143,-785.7143,785.7143
+TER,10,pt_to_tupi,historical,583,o oposto do comer demais é comer somente o suficiente,Mba'e 'u-eté-eté robaîara oîá nhote mba'e 'u,Mba'e-katu nhẽ 'u nhẽ mba'e-katu nhẽ mba'e-katu nhẽ,mba'e-memûã-etá rekóû nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nhẽ nh,114.2857,842.8571,-728.5714,728.5714
+TER,11,pt_to_tupi,adapted,893,"lugar onde dormem os japuguaçus; também nome antigo da ilha de santana, na costa leste do brasil",îapugûasu-kesaba,Ypagûasu re'õa,ypagûasu ro'y-pytera; santana îukara ré amõ gûitekó-mbyry-ygûara brazil,200.0,800.0,-600.0,600.0
+TER,12,pt_to_tupi,historical,79,"encontros das asas, isto é, a parte superior delas, onde vão fazendo a volta e onde nascem as penas maiores",pepó-ypy,i akanga-pûera,"ybaté-a'o, a'e i ybaté, ybyra pupé i îuru-pûaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîaîa",200.0,800.0,-600.0,600.0
+TER,13,pt_to_tupi,adapted,387,"o que é raro, poucas vezes visto ou que não se encontra a cada passo",setapokãba'e,i rarõmbyra,"i rarõmbûera, rarõmbûera koîpó o n'i apŷaba",200.0,700.0,-500.0,500.0
+TER,14,pt_to_tupi,historical,387,"o que é raro, poucas vezes visto ou que se não acha a cada passo",setapokãba'e,i rarõmbyra,"i rarõba'e, rarõ-marãîa koîpó o emonãîa'o",200.0,600.0,-400.0,400.0
+TER,15,tupi_to_pt,adapted,473,yby'ã-by'ama,barrancos,madeira fina,o que é como um peixe,200.0,600.0,-400.0,400.0
+TER,16,tupi_to_pt,adapted,565,T'asóne - Hei de ir T'orosóne,iremos,vou ir,hei de ir hei de ir,200.0,600.0,-400.0,400.0
+TER,17,pt_to_tupi,adapted,943,eu lhe pelo o couro cabeludo,Aî'apir-abo'o,Aîapyr,xe akangaíba rupi aîmoîesó,100.0,400.0,-300.0,300.0
+TER,18,tupi_to_pt,adapted,1016,ahẽ pabẽ,com ele,todos eles,eu sou o que está no meio,100.0,350.0,-250.0,250.0
+TER,19,pt_to_tupi,adapted,632,eu meço a profundidade do rio,Aty-ypy-a'ang,Asapy-pyr,xe îasapyk y-pytera,100.0,300.0,-200.0,200.0
+TER,20,pt_to_tupi,adapted,707,faço minhas mãos estalarem,Aîepó-mopuruk,Aîepé-pyr,aîmoîepysyk xe pó,100.0,300.0,-200.0,200.0
+chrF1,1,pt_to_tupi,adapted,201,são pedro puxou a espada,S Pedro itangapema osekyî,S Pedro itangapema osekyî,s pedro îepé-pûaî,100.0,15.0151,84.9849,84.9849
+chrF1,2,pt_to_tupi,adapted,656,você chorava sempre,Ereîase'o îepi,Ereîase'o îepi,ereîesapy'a memẽ,100.0,15.9496,84.0504,84.0504
+chrF1,3,pt_to_tupi,adapted,496,derrame suas lágrimas,Eîmo'ẽ nde resa'y,Eîmo'ẽ nde resa'a,eîpytyb sesé,91.8457,7.7993,84.0463,84.0463
+chrF1,4,pt_to_tupi,adapted,177,enforcador,aîubykara,îubykara,îurá-mokanhẽ,90.9524,11.4458,79.5065,79.5065
+chrF1,5,tupi_to_pt,adapted,213,Abápe nde?,quem é você?,quem é você?,tu és de quem?,100.0,20.9316,79.0684,79.0684
+chrF1,6,tupi_to_pt,adapted,976,Onhemombe'upe abá gûarinĩ-namo o só îanondé?,alguém se confessa antes de ir à guerra?,alguém se confessa antes de ir à guerra?,dizendo-se o homem como um pequeno animal antes de se casar?,100.0,22.3028,77.6972,77.6972
+chrF1,7,pt_to_tupi,adapted,1015,senhor jesus,Pa'i Îesu,Pa'i Îesu,pa'i îesu,100.0,27.5794,72.4206,72.4206
+chrF1,8,pt_to_tupi,adapted,876,nem por isso eu vou para longe,Naroîaî mamõ xe sóû,Ndaroîaî mamõ xe sóû,nd'e'i te'e xe sóû mombyry,90.134,17.7371,72.3969,72.3969
+chrF1,9,pt_to_tupi,adapted,151,está por aí seu pai?,Oubépe nde ruba?,Oîkobépe nde ruba?,oîkópe i xy?,76.658,5.6821,70.9759,70.9759
+chrF1,10,tupi_to_pt,adapted,204,Asaûsu biã,eu o amo,eu o amo,amo-o,100.0,29.1601,70.8399,70.8399
+chrF1,11,pt_to_tupi,adapted,476,estou com dores de parto,Xe membyrasy,Xe membyrasy,xe ra'yrasy,100.0,29.4347,70.5653,70.5653
+chrF1,12,pt_to_tupi,historical,476,eu tenho dores de parto,Xe membyrasy,Xe membyrasy,xe ra'yrasy,100.0,29.4347,70.5653,70.5653
+chrF1,13,pt_to_tupi,adapted,243,caminho impraticável,pé-aíba,pé-aíb,pé-tekatu,84.6946,15.8769,68.8177,68.8177
+chrF1,14,pt_to_tupi,adapted,704,a primeira lei,tekó-ypy,tekó-ypy,tekó-pyrama,100.0,36.9567,63.0433,63.0433
+chrF1,15,pt_to_tupi,historical,704,a lei primeira,tekó-ypy,tekó-ypy,tekó-pyrama,100.0,36.9567,63.0433,63.0433
+chrF1,16,tupi_to_pt,adapted,702,T'asó nde pyri kori,vou com você hoje,vou ir com você hoje,hei de ir junto de ti hoje,74.3883,12.422,61.9663,61.9663
+chrF1,17,tupi_to_pt,adapted,496,Eîmo'ẽ nde resa'y,derrame suas lágrimas,lance suas lágrimas,dá tua dor,68.2714,7.5076,60.7638,60.7638
+chrF1,18,pt_to_tupi,historical,598,vieram para consolá-lo,Our i moapysyka,Oú i moapysyk,o îubyk,68.756,8.9818,59.7743,59.7743
+chrF1,19,pt_to_tupi,historical,612,que nós sejamos corajosos,T'oré pyatã,T'oré pyatã îepé,t'oré turusu,78.36,19.3442,59.0158,59.0158
+chrF1,20,pt_to_tupi,adapted,597,estou preso aos ferros,Itá resé aín,Itá resé aîub,xe ratá-pyri,67.216,9.6909,57.5251,57.5251
+chrF3,1,pt_to_tupi,adapted,201,são pedro puxou a espada,S Pedro itangapema osekyî,S Pedro itangapema osekyî,s pedro îepé-pûaî,100.0,12.9646,87.0354,87.0354
+chrF3,2,pt_to_tupi,adapted,496,derrame suas lágrimas,Eîmo'ẽ nde resa'y,Eîmo'ẽ nde resa'a,eîpytyb sesé,91.8457,6.9333,84.9124,84.9124
+chrF3,3,pt_to_tupi,adapted,656,você chorava sempre,Ereîase'o îepi,Ereîase'o îepi,ereîesapy'a memẽ,100.0,16.9502,83.0498,83.0498
+chrF3,4,tupi_to_pt,adapted,213,Abápe nde?,quem é você?,quem é você?,tu és de quem?,100.0,21.8585,78.1415,78.1415
+chrF3,5,pt_to_tupi,adapted,151,está por aí seu pai?,Oubépe nde ruba?,Oîkobépe nde ruba?,oîkópe i xy?,81.9586,4.9993,76.9593,76.9593
+chrF3,6,pt_to_tupi,historical,612,que nós sejamos corajosos,T'oré pyatã,T'oré pyatã îepé,t'oré turusu,94.7659,20.2083,74.5576,74.5576
+chrF3,7,tupi_to_pt,adapted,976,Onhemombe'upe abá gûarinĩ-namo o só îanondé?,alguém se confessa antes de ir à guerra?,alguém se confessa antes de ir à guerra?,dizendo-se o homem como um pequeno animal antes de se casar?,100.0,26.8303,73.1697,73.1697
+chrF3,8,tupi_to_pt,adapted,204,Asaûsu biã,eu o amo,eu o amo,amo-o,100.0,26.854,73.146,73.146
+chrF3,9,pt_to_tupi,adapted,1015,senhor jesus,Pa'i Îesu,Pa'i Îesu,pa'i îesu,100.0,27.5794,72.4206,72.4206
+chrF3,10,pt_to_tupi,adapted,876,nem por isso eu vou para longe,Naroîaî mamõ xe sóû,Ndaroîaî mamõ xe sóû,nd'e'i te'e xe sóû mombyry,92.8165,20.5098,72.3068,72.3068
+chrF3,11,pt_to_tupi,adapted,476,estou com dores de parto,Xe membyrasy,Xe membyrasy,xe ra'yrasy,100.0,28.1619,71.8381,71.8381
+chrF3,12,pt_to_tupi,historical,476,eu tenho dores de parto,Xe membyrasy,Xe membyrasy,xe ra'yrasy,100.0,28.1619,71.8381,71.8381
+chrF3,13,pt_to_tupi,adapted,177,enforcador,aîubykara,îubykara,îurá-mokanhẽ,84.8135,12.9769,71.8365,71.8365
+chrF3,14,tupi_to_pt,adapted,702,T'asó nde pyri kori,vou com você hoje,vou ir com você hoje,hei de ir junto de ti hoje,79.461,14.6093,64.8518,64.8518
+chrF3,15,tupi_to_pt,adapted,781,"Osó S Pedro, São João abé",foram são pedro e são joão,foram também são pedro e são joão,foi com São Pedro e São João,87.3387,25.6177,61.7209,61.7209
+chrF3,16,pt_to_tupi,adapted,597,estou preso aos ferros,Itá resé aín,Itá resé aîub,xe ratá-pyri,70.8433,10.0823,60.761,60.761
+chrF3,17,tupi_to_pt,adapted,496,Eîmo'ẽ nde resa'y,derrame suas lágrimas,lance suas lágrimas,dá tua dor,64.9066,5.6419,59.2647,59.2647
+chrF3,18,pt_to_tupi,adapted,103,vou me esconder bem,Aîemĩngatu-pe ká,Aîemĩngatu-katu,t'asó-katu,68.4937,9.5501,58.9436,58.9436
+chrF3,19,tupi_to_pt,historical,218,Onhemoangaîpabeté serã apŷaba?,porventura tornaram-se muito maus os homens?,"os homens, porventura, se tornaram muito maus?",pecadores serão os que morrerão?,69.7347,11.0534,58.6813,58.6813
+chrF3,20,pt_to_tupi,adapted,243,caminho impraticável,pé-aíba,pé-aíb,pé-tekatu,75.4555,17.8427,57.6128,57.6128

@@ -1,0 +1,16 @@
+transformers
+torch
+pandas            
+numpy
+scikit-learn
+evaluate
+sacrebleu
+sentencepiece
+accelerate
+openpyxl
+tqdm
+matplotlib
+openai
+python-dotenv
+protobuf
+datasets

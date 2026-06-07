@@ -1,0 +1,3 @@
+ModelType,TrainDataset,Direction,Dataset,Seed,PredictionFile,BLEU,TER,chrF1,chrF3
+finetuned,historical,tupi_to_pt,adapted,42,/Users/thais/Desktop/Documentos/Avançado/TUPI/Modernizing-Parallel-Corpora-for-Low-Resource-Machine-Translation-Portuguese-Tupi-Translation-main/results/predictions/finetuned/finetuned_tupi_to_pt_adapted_seed42_train_historical.csv,8.97,94.39,28.32,27.78
+finetuned,historical,tupi_to_pt,historical,42,/Users/thais/Desktop/Documentos/Avançado/TUPI/Modernizing-Parallel-Corpora-for-Low-Resource-Machine-Translation-Portuguese-Tupi-Translation-main/results/predictions/finetuned/finetuned_tupi_to_pt_historical_seed42_train_historical.csv,12.61,89.77,30.64,30.03
