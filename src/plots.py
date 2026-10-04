@@ -7,7 +7,7 @@ import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-import matplotlib.colors as mcolors
+from matplotlib.patches import FancyBboxPatch
 import numpy as np
 import pandas as pd
 
@@ -511,84 +511,165 @@ def save_summary_table_plot(df: pd.DataFrame, root: Path) -> list[Path]:
 
 
 def save_finetuned_delta_heatmap(df: pd.DataFrame, root: Path) -> list[Path]:
+    """Compare fine-tuned historical vs adapted training in a before/after table.
+
+    This replaces the previous delta heatmap. Each panel is a translation direction,
+    each column is an evaluation corpus, and each cell shows the score change when
+    switching the training corpus from Historical to Adapted. The quality delta is
+    sign-adjusted for TER so that positive always means better quality.
+    """
     plots_dir = root / "results" / "plots"
     plots_dir.mkdir(parents=True, exist_ok=True)
 
     fine_tuned = df[df["ModelType"].eq("finetuned")].copy()
-    rows: list[str] = []
-    values = np.full((len(_ordered_directions(df)) * len(DATASET_ORDER), len(METRICS)), np.nan)
-    quality_delta = np.full_like(values, np.nan, dtype=float)
+    directions = _ordered_directions(fine_tuned)
+    if not directions:
+        return []
 
-    row_idx = 0
-    for direction in _ordered_directions(df):
-        for dataset in _ordered_datasets(df[df["Direction"] == direction]):
-            rows.append(f"{_display_direction(direction)}\n{DATASET_LABELS.get(dataset, dataset)}")
-            subset = fine_tuned[
-                fine_tuned["Direction"].eq(direction)
-                & fine_tuned["Dataset"].eq(dataset)
-                & fine_tuned["TrainDataset"].isin(TRAIN_DATASET_ORDER)
-            ]
-            pivot = subset.pivot_table(
-                index="TrainDataset",
-                columns="Metric",
-                values="Mean",
-                aggfunc="first",
+    improve_color = "tab:blue"
+    worse_color = "tab:red"
+
+    fig, axes = plt.subplots(1, len(directions), figsize=(6.75 * len(directions), 5.8))
+    if len(directions) == 1:
+        axes = [axes]
+
+    for ax, direction in zip(axes, directions):
+        ax.set_xlim(0, 2.35)
+        ax.set_ylim(-0.15, 4.55)
+        ax.axis("off")
+
+        # Panel title: translation direction.
+        ax.text(
+            1.18,
+            4.33,
+            _display_direction(direction).replace(" -> ", " → "),
+            ha="center",
+            va="center",
+            fontsize=15,
+            fontweight="bold",
+        )
+
+        datasets = _ordered_datasets(fine_tuned[fine_tuned["Direction"].eq(direction)])
+        if len(datasets) != 2:
+            raise ValueError(
+                f"Expected exactly two evaluation corpora for {direction}, got {datasets}."
             )
-            for col_idx, metric in enumerate(METRICS):
-                if all(item in pivot.index for item in TRAIN_DATASET_ORDER) and metric in pivot.columns:
-                    delta = float(pivot.at["adapted", metric]) - float(pivot.at["historical", metric])
-                    values[row_idx, col_idx] = delta
-                    quality_delta[row_idx, col_idx] = -delta if metric == "TER" else delta
-            row_idx += 1
 
-    values = values[: len(rows), :]
-    quality_delta = quality_delta[: len(rows), :]
-    max_abs = np.nanmax(np.abs(quality_delta))
-    if not np.isfinite(max_abs) or np.isclose(max_abs, 0):
-        max_abs = 1.0
+        column_x = [0.82, 1.72]
+        for x, dataset in zip(column_x, datasets):
+            dataset_label = DATASET_LABELS.get(dataset, str(dataset).capitalize())
+            ax.text(
+                x,
+                3.96,
+                f"{dataset_label} evaluation\ncorpus",
+                ha="center",
+                va="center",
+                fontsize=11,
+                fontweight="bold",
+                linespacing=1.1,
+            )
 
-    cmap = plt.colormaps["RdYlGn"].copy()
-    cmap.set_bad(color="#f2f2f2")
-    norm = mcolors.TwoSlopeNorm(vmin=-max_abs, vcenter=0.0, vmax=max_abs)
+        for row_idx, metric in enumerate(METRICS):
+            y = 3.25 - row_idx * 0.9
 
-    fig, ax = plt.subplots(figsize=(8.6, max(4.8, 0.72 * len(rows) + 2.2)))
-    image = ax.imshow(np.ma.masked_invalid(quality_delta), cmap=cmap, norm=norm, aspect="auto")
+            ax.text(
+                0.07,
+                y,
+                metric,
+                ha="left",
+                va="center",
+                fontsize=12,
+                fontweight="bold",
+            )
 
-    ax.set_title(
-        "Delta heatmap: Fine-tuned (adapted) - Fine-tuned (historical)\n"
-        "Green means the adapted-trained model is better; numbers show raw deltas",
-        fontsize=13,
-        weight="bold",
-        pad=14,
-    )
-    ax.set_xticks(np.arange(len(METRICS)))
-    ax.set_xticklabels(METRICS)
-    ax.set_yticks(np.arange(len(rows)))
-    ax.set_yticklabels(rows)
-    ax.set_xlabel("Metric")
-    ax.set_ylabel("Direction / evaluation corpus")
+            for x, dataset in zip(column_x, datasets):
+                subset = fine_tuned[
+                    fine_tuned["Direction"].eq(direction)
+                    & fine_tuned["Dataset"].eq(dataset)
+                    & fine_tuned["Metric"].eq(metric)
+                    & fine_tuned["TrainDataset"].isin(TRAIN_DATASET_ORDER)
+                ]
 
-    for row in range(values.shape[0]):
-        for col in range(values.shape[1]):
-            value = values[row, col]
-            if np.isfinite(value):
-                ax.text(
-                    col,
-                    row,
-                    f"{value:+.2f}",
-                    ha="center",
-                    va="center",
-                    fontsize=10,
-                    color="black",
+                pivot = subset.pivot_table(
+                    index="TrainDataset",
+                    values="Mean",
+                    aggfunc="first",
                 )
 
-    fig.colorbar(image, ax=ax, shrink=0.78, label="Quality delta after TER inversion")
-    fig.tight_layout()
+                if not all(item in pivot.index for item in TRAIN_DATASET_ORDER):
+                    continue
+
+                before = float(pivot.at["historical", "Mean"])
+                after = float(pivot.at["adapted", "Mean"])
+
+                raw_delta = after - before
+                quality_delta = -raw_delta if metric == "TER" else raw_delta
+                improved = quality_delta > 0
+                color = improve_color if improved else worse_color
+                arrow = "▲" if improved else "▼"
+
+                card = FancyBboxPatch(
+                    (x - 0.38, y - 0.29),
+                    0.76,
+                    0.58,
+                    boxstyle="round,pad=0.02,rounding_size=0.025",
+                    linewidth=0.8,
+                    edgecolor="0.75",
+                    facecolor="white",
+                )
+                ax.add_patch(card)
+
+                ax.text(
+                    x,
+                    y + 0.10,
+                    f"{before:.2f}  →  {after:.2f}",
+                    ha="center",
+                    va="center",
+                    fontsize=11,
+                )
+
+                ax.text(
+                    x,
+                    y - 0.13,
+                    f"{arrow} {quality_delta:+.2f} quality",
+                    ha="center",
+                    va="center",
+                    fontsize=10.5,
+                    fontweight="bold",
+                    color=color,
+                )
+
+        ax.text(
+            1.18,
+            0.03,
+            "Train: Historical  →  Train: Adapted",
+            ha="center",
+            va="bottom",
+            fontsize=10.5,
+        )
+
+    fig.text(
+        0.5,
+        0.035,
+        "Blue ▲ = better quality; red ▼ = worse quality. "
+        "For TER, lower scores are better, so its quality delta is sign-adjusted.",
+        ha="center",
+        fontsize=10,
+    )
+
+    # Keep the two translation-direction panels visually close.
+    fig.subplots_adjust(
+        left=0.03,
+        right=0.98,
+        top=0.93,
+        bottom=0.10,
+        wspace=0.06,
+    )
+
     out_file = plots_dir / "delta_finetuned_adapted_minus_historical.png"
     fig.savefig(out_file, dpi=300, bbox_inches="tight")
     plt.close(fig)
     return [out_file]
-
 
 def save_bleu_chrf_scatter_plots(df: pd.DataFrame, root: Path) -> list[Path]:
     plots_dir = root / "results" / "plots"
